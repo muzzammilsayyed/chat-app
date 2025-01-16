@@ -30,6 +30,7 @@ A real-time chat application built with Django and WebSocket support.
 ```bash
 git clone https://github.com/muzzammilsayyed/chat-app.git
 cd chat-application
+```
 
 
 2. Create and activate virtual environment:
@@ -37,6 +38,7 @@ cd chat-application
 # Windows
 python -m venv venv
 venv\Scripts\activate
+```
 
 # Linux/Mac
 python -m venv venv
