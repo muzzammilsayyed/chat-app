@@ -1,0 +1,169 @@
+.chat-container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.message {
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.received {
+    background: #e9ecef;
+    margin-right: auto;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.user-item:hover {
+    background: #e9ecef;
+}
+
+/* Add to static/css/chat.css */
+
+.chat-header {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.user-item.active {
+    background: #e3f2fd;
+}
+
+.message-time {
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+.select-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #6c757d;
+}
+
+.user-profile {
+    padding: 15px;
+}
+
+.shared-files, .chat-settings {
+    margin-top: 20px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #dee2e6;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-name {
+    font-weight: 500;
+}
+
+/* User List Styles */
+.user-list {
+    overflow-y: auto;
+    max-height: calc(100vh - 150px);
+}
+
+.user-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dee2e6;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-item:hover {
+    background-color: #f8f9fa;
+}
+
+.user-item.active {
+    background-color: #e9ecef;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.user-name {
+    font-weight: 500;
+}
+
+/* Left Menu Toggle */
+.left-menu {
+    transition: width 0.3s ease;
+}
+
+.left-menu.collapsed {
+    width: 60px;
+}
+
+.left-menu.collapsed .user-info > div:not(.user-avatar) {
+    display: none;
+}
+
+.left-menu.collapsed .menu-title {
+    display: none;
+}
