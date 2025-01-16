@@ -106,24 +106,13 @@ chat_project/
 
 ## Common Issues and Solutions
 
-1. If you get a "Address already in use" error:
-```bash
-# Windows
-netstat -ano | findstr :8000
-taskkill /PID <PID> /F
-
-# Linux/Mac
-lsof -i :8000
-kill -9 <PID>
-```
-
-2. If WebSocket connection fails:
+1. If WebSocket connection fails:
 - Make sure you're running the server with Daphne
 - Check if your browser supports WebSocket
 - Check the browser console for errors
 
 ## Live Demo
-[Your PythonAnywhere URL]
+[URL soon]
 
 ## Contributing
 
