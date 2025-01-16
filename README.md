@@ -28,7 +28,7 @@ A real-time chat application built with Django and WebSocket support.
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/muzzammilsayyed/chat-app.git
 cd chat-application
 
 
